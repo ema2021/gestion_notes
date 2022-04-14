@@ -1,0 +1,3 @@
+identifiant,mdp
+user,pass
+user1,pass1
