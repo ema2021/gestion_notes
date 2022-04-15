@@ -9,7 +9,6 @@ if (!isset($_SESSION["tab_etd"])) {
 
 $tab_etudiants = $_SESSION["tab_etd"];
 $ident =  $_GET["id"];
-echo $ident;
 
 ?>
 

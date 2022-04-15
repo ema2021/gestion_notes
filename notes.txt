@@ -1,1 +1,4 @@
-a:7:{i:0;O:8:"Etudiant":3:{s:3:"nom";s:6:"Name 0";s:5:"maths";i:12;s:4:"info";i:13;}i:1;O:8:"Etudiant":3:{s:3:"nom";s:6:"Name 1";s:5:"maths";i:12;s:4:"info";i:13;}i:2;O:8:"Etudiant":3:{s:3:"nom";s:6:"Name 2";s:5:"maths";i:12;s:4:"info";i:13;}i:3;O:8:"Etudiant":3:{s:3:"nom";s:6:"Name 3";s:5:"maths";i:12;s:4:"info";i:13;}i:4;O:8:"Etudiant":3:{s:3:"nom";s:6:"Name 4";s:5:"maths";i:12;s:4:"info";i:13;}i:5;O:8:"Etudiant":3:{s:3:"nom";s:6:"Name 5";s:5:"maths";i:12;s:4:"info";i:13;}i:6;O:8:"Etudiant":3:{s:3:"nom";s:6:"Name 6";s:5:"maths";i:12;s:4:"info";i:13;}}
+a:6:{i:0;O:8:"Etudiant":3:{s:3:"nom";s:6:"Name 0";s:5:"maths";i:12;s:4:"info";i:13;}i:1;O:8:"Etudiant":3:{s:3:"nom";s:6:"Name 1";s:5:"maths";i:12;s:4:"info";i:13;}i:2;O:8:"Etudiant":3:{s:3:"nom";s:6:"Name 2";s:5:"maths";i:12;s:4:"info";i:13;}i:3;O:8:"Etudiant":3:{s:3:"nom";s:6:"Name 3";s:5:"maths";i:12;s:4:"info";i:13;}i:4;O:8:"Etudiant":3:{s:3:"nom";s:6:"Name 4";s:5:"maths";i:12;s:4:"info";i:13;}i:6;O:8:"Etudiant":3:{s:3:"nom";s:7:"Name 6
+";s:5:"maths";s:3:"12
+";s:4:"info";s:3:"15
+";}}
