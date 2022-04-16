@@ -3,7 +3,11 @@
 
 <head>
     <meta charset="utf-8">
+<<<<<<< HEAD
     <title>atelier 5</title>
+=======
+    <title>Atelier 5</title>
+>>>>>>> master
     <link rel="stylesheet" href="style.css">
 </head>
 

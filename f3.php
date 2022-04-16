@@ -12,22 +12,7 @@ $tab_etudiants = unserialize($data);
 
 $_SESSION["tab_etd"] = $tab_etudiants;
 
-function mention($note)
-{
-    if ($note < 10) {
-        return 'Mauvais';
-    }
-    if ($note < 12) {
-        return 'Assez Bien';
-    }
-    if ($note < 15) {
-        return 'Bien';
-    }
-    if ($note < 18) {
-        return 'Très bien';
-    }
-    return 'Excellent';
-}
+
 ?>
 
 <!DOCTYPE html>

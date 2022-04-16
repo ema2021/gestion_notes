@@ -8,7 +8,8 @@ if (!isset($_SESSION["tab_etd"])) {
 }
 
 $tab_etudiants = $_SESSION["tab_etd"];
-$ident =  $_GET["id"];
+echo $tab_etudiants[$_GET["id"]];
+$ident =  (int)$_GET["id"];
 
 ?>
 
@@ -35,7 +36,11 @@ $ident =  $_GET["id"];
 
 <body>
 
+<<<<<<< HEAD
     <main class="bg-slate-200/20  mt-20 mx-8 rounded-md md:w-2/3 md:mx-auto shadow-xl shadow-black/40">
+=======
+    <main class="bg-slate-200/20  shadow-md shadow-black mt-20 mx-8 rounded-md md:w-2/3 md:mx-auto">
+>>>>>>> master
         <form action="save.php" method="post" id="myForm" class="grid sm:grid-cols-3 ">
 
             <div class="  flex justify-center items-center bg-slate-200 rounded-t-md sm:rounded-l-md sm:rounded-tr-none"><img src="fssm.png" alt="logo du FSSM" class="w-80 h-48 "></div>

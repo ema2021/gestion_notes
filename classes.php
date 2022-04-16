@@ -33,7 +33,11 @@ class Etudiant
     }
     public function __destruct()
     {
+<<<<<<< HEAD
         return "Etudiant ( " . $this->nom . ") a ete supprime";
+=======
+        return "Etudiant ( " . $this->nom . " ) a ete supprime";
+>>>>>>> master
     }
     public function __toString()
     {
