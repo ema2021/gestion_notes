@@ -875,6 +875,10 @@ input {
   background-color: rgb(255 255 255 / 0.9);
 }
 
+.bg-black\/30 {
+  background-color: rgb(0 0 0 / 0.3);
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -1028,6 +1032,11 @@ input {
 
 .shadow-black\/40 {
   --tw-shadow-color: rgb(0 0 0 / 0.4);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-black\/30 {
+  --tw-shadow-color: rgb(0 0 0 / 0.3);
   --tw-shadow: var(--tw-shadow-colored);
 }
 
