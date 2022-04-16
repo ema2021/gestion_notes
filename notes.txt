@@ -1,4 +1,13 @@
-a:6:{i:0;O:8:"Etudiant":3:{s:3:"nom";s:6:"Name 0";s:5:"maths";i:12;s:4:"info";i:13;}i:1;O:8:"Etudiant":3:{s:3:"nom";s:6:"Name 1";s:5:"maths";i:12;s:4:"info";i:13;}i:2;O:8:"Etudiant":3:{s:3:"nom";s:6:"Name 2";s:5:"maths";i:12;s:4:"info";i:13;}i:3;O:8:"Etudiant":3:{s:3:"nom";s:6:"Name 3";s:5:"maths";i:12;s:4:"info";i:13;}i:4;O:8:"Etudiant":3:{s:3:"nom";s:6:"Name 4";s:5:"maths";i:12;s:4:"info";i:13;}i:6;O:8:"Etudiant":3:{s:3:"nom";s:7:"Name 6
+a:4:{i:3;O:8:"Etudiant":3:{s:3:"nom";s:7:"Hafssa
+";s:5:"maths";s:3:"17
+";s:4:"info";s:3:"19
+";}i:4;O:8:"Etudiant":3:{s:3:"nom";s:7:"hattim
 ";s:5:"maths";s:3:"12
+";s:4:"info";s:3:"13
+";}i:5;O:8:"Etudiant":3:{s:3:"nom";s:9:"khalide 
+";s:5:"maths";s:3:"15
 ";s:4:"info";s:3:"15
+";}i:6;O:8:"Etudiant":3:{s:3:"nom";s:6:"Ilham
+";s:5:"maths";s:3:"20
+";s:4:"info";s:3:"20
 ";}}

@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+	body {
+		@apply bg-brand;
+	}
+	button {
+		@apply shadow-md;
+	}
+	input {
+		@apply outline-none rounded-md;
+	}
+	label,
+	h1 {
+		@apply text-lg text-white;
+	}
+}
+@layer components {
+	input {
+		@apply outline-none rounded-md;
+	}
+}
