@@ -5,9 +5,9 @@ session_start();
 if (!isset($_SESSION["tab_etd"])) {
     $_SESSION["tab_etd"] = array();
 }
-$nom = $_POST["studentName"] . "\n";
-$maths = $_POST["mathMark"] . "\n";
-$info = $_POST["infoMark"] . "\n";
+$nom = (int) $_POST["studentName"];
+$maths = (int)$_POST["mathMark"];
+$info = (int)$_POST["infoMark"];
 if ($_POST['id'] != "null") {
     $etd = new Etudiant($nom, $maths, $info);
     // echo $etd . "<br/>";

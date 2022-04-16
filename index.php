@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>atelier 3</title>
+    <title>Atelier 5</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
