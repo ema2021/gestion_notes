@@ -33,7 +33,7 @@ class Etudiant
     }
     public function __destruct()
     {
-        return "Etudiant ( " . $this->nom . " , " . $this->id . ") a ete supprime";
+        return "Etudiant ( " . $this->nom . ") a ete supprime";
     }
     public function __toString()
     {
