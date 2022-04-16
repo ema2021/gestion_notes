@@ -8,7 +8,7 @@ if (!isset($_SESSION["tab_etd"])) {
 }
 
 $tab_etudiants = $_SESSION["tab_etd"];
-echo $tab_etudiants[$_GET["id"]];
+// echo $tab_etudiants[$_GET["id"]];
 $ident =  (int)$_GET["id"];
 
 ?>
