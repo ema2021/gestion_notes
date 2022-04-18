@@ -1,13 +1,7 @@
 <?php
-require_once 'public_html/pdoconfig.php';
+// require_once 'public_html/pdoconfig.php';
 
-try {
-    $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-
-    // echo "<script type='text/javascript'>alert('Connected to $dbname at $host successfully.');</script>";
-} catch (PDOException $pe) {
-    die("Could not connect to the database  hhhhh $dbname :" . $pe->getMessage());
-}
+include 'public_html/databaseconnect.php';
 
 $stmt = $conn->query("SELECT * FROM Etudiant");
 // echo var_dump($stmt);
@@ -16,6 +10,10 @@ $stmt->fetch(PDO::FETCH_ASSOC);
 // delete a sql row by id   $id = $_GET['id'];  $sql = "DELETE FROM Etudiant WHERE id = $id";
 // $conn->exec($sql);
 // echo "Record deleted successfully";  $sql = "SELECT * FROM Etudiant";
+$id = 53;
+$nom = 'test';
+$maths = 12;
+$info = 12;
 
 function delete($id, $conn)
 {
@@ -25,16 +23,32 @@ function delete($id, $conn)
 }
 if (isset($_GET['delete'])) {
     delete($_GET["delete"], $conn);
+    header('Location: test_db.php');
+}
+if (isset($_GET['edit'])) {
+    alter($_GET["edit"], $conn, $nom, $maths, $info);
+    // header('Location: test_db.php');
+}
+if ($_GET['new']) {
+    insert($conn);
+    // header('Location: test_db.php');
 }
 
 // function to alter a record in database
-function alter($id, $conn)
+function alter($id, $conn, $nom, $maths, $info)
 {
-    $sql = "UPDATE Etudiant SET nom = 'placeholder' WHERE id = $id";
+    $id = $_GET['edit'];
+    // update a database Record
+    $sql = "UPDATE Etudiant SET nom ='" . $nom . "', maths =" . $maths . ", info=" . $info . " WHERE id = $id";
     $conn->exec($sql);
+}
+function insert($conn, $nom, $maths, $info)
+{
+    $sql = "INSERT INTO Etudiant ( nom, maths, info) VALUES ( '" . $nom . "', " . $maths . ", " . $info . " )";
+    $conn->exec($sql);
+}
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,7 +61,8 @@ function alter($id, $conn)
 </head>
 
 <body>
-    <table class="w-full text-sm text-left text-gray-500 text-gray-400 w-1/2 mx-auto">
+    <a href="?new=true" class="px-2 py-1 bg-blue-500">Ajouter</a>
+    <table class="w-full text-sm text-left  text-gray-400 sm:w-1/2 mx-auto">
         <thead class="text-xs bg-slate-200/50 uppercase  text-gray-600">
             <tr>
                 <th scope="col" class="px-6 py-3 text-center">
@@ -104,7 +119,7 @@ function alter($id, $conn)
                     </td>
                     <td class="px-6 py-4">
                         <?php
-                        echo '<a href="?edit=' . $row['id'] . '">delete</a>
+                        echo '<a href="?edit=' . $row['id'] . '">edit</a>
 ';
                         ?>
                     </td>
