@@ -59,7 +59,7 @@ function mention($note)
 
 <body>
 
-    <main class="grid  space-y-2 mt-20 bg-slate-200/20 sm:rounded-md shadow-md shadow-black lg:w-1/2 lg:mx-auto">
+    <main class="grid  space-y-2 mt-20 bg-slate-200/20 sm:rounded-md shadow-md shadow-black lg:w-3/4 lg:mx-auto xl:w-2/3">
         <img src="fssm.png" alt="logo du FSSM" class="w-80 mx-auto bg-slate-200 h-40 my-4 sm:rounded-md shadow-md">
 
         <div class=" text-white font-medium ">

@@ -8,7 +8,7 @@
 </head>
 
 <body class=" p-4 sm:p-8 ">
-    <form action="fichphp.php" method="post" class="mx-10 sm:mx-auto bg-slate-300/30 rounded-2xl shadow-xl shadow-black/30 grid sm:grid-cols-3 lg:w-1/2 mt-40">
+    <form action="fichphp.php" method="post" class="mx-10 sm:mx-auto bg-slate-300/30 rounded-2xl shadow-xl shadow-black/30 grid sm:grid-cols-3 lg:w-1/2 mt-40 ">
         <div class="">
             <img src="fssm.png" alt="logo du FSSM" class=" bg-white/90 h-full rounded-t-2xl sm:rounded-l-2xl w-full sm:rounded-tr-none">
 
