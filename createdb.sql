@@ -7,7 +7,7 @@ CREATE USER IF NOT EXISTS 'web_php' @'localhost' IDENTIFIED BY 'password';
 
 GRANT ALL PRIVILEGES ON *.* TO 'web_php' @'localhost';
 
-CREATE DATABASE IF NOT EXISTS gestion_notes2;
+CREATE DATABASE IF NOT EXISTS gestion_notes;
 
 grant create on *.* to 'web_php' @'localhost';
 

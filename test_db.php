@@ -26,6 +26,13 @@ function delete($id, $conn)
 if (isset($_GET['delete'])) {
     delete($_GET["delete"], $conn);
 }
+
+// function to alter a record in database
+function alter($id, $conn)
+{
+    $sql = "UPDATE Etudiant SET nom = 'placeholder' WHERE id = $id";
+    $conn->exec($sql);
+
 ?>
 
 <!DOCTYPE html>
@@ -97,7 +104,8 @@ if (isset($_GET['delete'])) {
                     </td>
                     <td class="px-6 py-4">
                         <?php
-                        echo "edit"
+                        echo '<a href="?edit=' . $row['id'] . '">delete</a>
+';
                         ?>
                     </td>
                     <td class="px-6 py-4 text-right">
