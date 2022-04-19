@@ -3,7 +3,7 @@
 @tailwind utilities;
 @layer base {
 	body {
-		@apply bg-brand;
+		@apply bg-brand/80;
 	}
 	button {
 		@apply shadow-md;
